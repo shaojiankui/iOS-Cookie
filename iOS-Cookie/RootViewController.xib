@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RootViewController">
+            <connections>
+                <outlet property="myWebview" destination="e5W-lf-t3D" id="ebC-KW-Zax"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qqP-Ea-RI2">
+                    <frame key="frameInset" minY="461" width="112" height="45"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.052006088200000002" green="0.24993366" blue="0.4757766128" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="清除Cookie"/>
+                    <connections>
+                        <action selector="cleanCookieTouched:" destination="-1" eventType="touchUpInside" id="2dd-Gp-06j"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B1L-iN-adJ">
+                    <frame key="frameInset" minX="252" minY="461" width="122" height="45"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.052006088200000002" green="0.24993366" blue="0.4757766128" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="新WebView"/>
+                    <connections>
+                        <action selector="refreshWebView2Touched:" destination="-1" eventType="touchUpInside" id="zEr-RT-tH3"/>
+                    </connections>
+                </button>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e5W-lf-t3D">
+                    <color key="backgroundColor" red="0.96470588239999999" green="0.14117647059999999" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="153" id="Mx8-LB-yh1"/>
+                        <constraint firstAttribute="width" constant="148" id="jRP-Me-TVE"/>
+                    </constraints>
+                </webView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NDd-PC-G5P">
+                    <frame key="frameInset" minX="126" minY="461" width="118" height="45"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.052006088200000002" green="0.24993366" blue="0.4757766128" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="自定义Cookie"/>
+                    <connections>
+                        <action selector="customCookieTouched:" destination="-1" eventType="touchUpInside" id="gAp-9R-uxM"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ulL-H1-pVB">
+                    <frame key="frameInset" minX="47" minY="78" width="280" height="45"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.052006088200000002" green="0.24993366" blue="0.4757766128" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="WKWebview"/>
+                    <connections>
+                        <action selector="wkwebviewTouched:" destination="-1" eventType="touchUpInside" id="dDF-7S-pBj"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QGw-FM-f0e">
+                    <frame key="frameInset" minX="47" minY="139" width="280" height="45"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.052006088200000002" green="0.24993366" blue="0.4757766128" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="UIWebview"/>
+                    <connections>
+                        <action selector="uiwebviewTouched:" destination="-1" eventType="touchUpInside" id="EIs-xj-g6U"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xkn-sL-7pO">
+                    <frame key="frameInset" minX="47" minY="205" width="280" height="45"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.052006088200000002" green="0.24993366" blue="0.4757766128" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="AFNetworking"/>
+                    <connections>
+                        <action selector="afTouched:" destination="-1" eventType="touchUpInside" id="rse-9Z-fp3"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="e5W-lf-t3D" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="24x-mj-GeI"/>
+                <constraint firstAttribute="bottom" secondItem="e5W-lf-t3D" secondAttribute="bottom" id="zjG-Xr-HoD"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <point key="canvasLocation" x="25.5" y="51.5"/>
+        </view>
+    </objects>
+</document>
